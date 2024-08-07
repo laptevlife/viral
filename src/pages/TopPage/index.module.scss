@@ -1,0 +1,101 @@
+.topThree {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    position: relative;
+    // border: 1px solid red;
+    padding: 10px 5px;
+
+    .userInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      // border: 1px solid green;
+    }
+    .userImage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .placeNumberIcon {
+        position: absolute;
+        bottom: -15px;
+      }
+    }
+    .userImage img {
+      width: 100%;
+      border-radius: 90%;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+    }
+    .userName {
+      font-size: 21px;
+    }
+    .userStat {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  .userSmallImg {
+    .userImage img {
+      width: 60%;
+    }
+  }
+}
+.gradientBorder {
+  position: relative;
+  padding: 2px; /* Внутренний отступ для контента */
+  background: linear-gradient(45deg, #9bb4f5, #e9b9d5); /* Градиент для границы */
+  border-radius: 24px; /* Закругление углов */
+}
+
+.gradientBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Наследуем градиент */
+  z-index: -1; /* Убираем на задний план */
+  border-radius: 24px; /* Закругление углов */
+  filter: blur(5px); /* Размытие границы */
+}
+
+.content {
+  background: white; /* Фон для контента */
+  padding: 50px; /* Внутренний отступ для контента */
+  border-radius: 24px; /* Закругление углов контента */
+}
+
+.boxRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  position: relative;
+  .box {
+    height: 109px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 24px;
+  }
+}
