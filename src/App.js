@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import RouterComponent from './Router/RouterComponent';
 import Layout from './components/Layout';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+import BottomMenu from './components/BottomMenu';
+import { useActions } from './hooks/redux';
+import { userSlice } from './features/userSlice';
 const tg = window.Telegram.WebApp
 
 const theme = createTheme({
@@ -13,15 +19,20 @@ const theme = createTheme({
 });
 
 const App = () => {
-  console.log('tg444', tg);
+  const { setUser, setInitDataUnsafe } = useActions(userSlice.actions);
+  useEffect(() => {
+    setUser(tg?.initDataUnsafe?.user)
+    setInitDataUnsafe(tg?.initDataUnsafe)
+  }, [tg])
+
   return (
     <ThemeProvider theme={theme}>
-      <Layout>
-        ^^^^^^^^^
-        {tg?.initDataUnsafe?.user?.username}
-        <button onClick={() => alert(JSON.stringify(tg?.initDataUnsafe))}>!!!!</button>
-        <RouterComponent />
-      </Layout>
+      <Router>
+        <Layout>
+          <RouterComponent />
+          <BottomMenu />
+        </Layout>
+      </Router>
     </ThemeProvider>
   );
 };
