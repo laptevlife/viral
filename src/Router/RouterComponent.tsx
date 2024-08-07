@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import ProfilePage from '../pages/ProfilePage/ProfilePage';
 import RefPage from '../pages/RefPage/RefPage';
 import TopPage from '../pages/TopPage/TopPage';
