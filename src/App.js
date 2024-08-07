@@ -2,7 +2,6 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import RouterComponent from './Router/RouterComponent';
 import Layout from './components/Layout';
-import { useTelegram } from './hooks/useTelegram';
 const tg = window.Telegram.WebApp.initData
 
 const theme = createTheme({
@@ -15,7 +14,6 @@ const theme = createTheme({
 
 const App = () => {
   console.log('tg444', tg);
-  // useTelegram(tg)
   return (
     <ThemeProvider theme={theme}>
       <Layout>
