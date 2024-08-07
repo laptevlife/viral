@@ -1,11 +1,5 @@
 import React from 'react';
 import s from './index.module.scss';
-
-// import Lightning from '../../assets/icons/Lightning.svg';
-// import RocketLaunch from '../../assets/icons/RocketLaunch.svg';
-// import Trophy from '../../assets/icons/Trophy.svg';
-// import UsersThree from '../../assets/icons/UsersThree.svg';
-// import Vector from '../../assets/icons/Vector.svg';
 import useNavigateUtils from '../../hooks/useNavigateUtils';
 import { ERoutes } from '../../Router/router.constant';
 import cn from 'classnames';

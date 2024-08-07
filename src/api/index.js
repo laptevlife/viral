@@ -7,7 +7,6 @@ export const mainApi = createApi({
     getItems: builder.query({
       query: () => 'items',
     }),
-    // Другие эндпоинты
   }),
 });
 

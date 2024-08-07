@@ -11,7 +11,6 @@ const useNavigateUtils = () => {
   return {
     goTo,
     paramsId: params.id,
-    // sectionId: params.sectionId,
     location: location,
   };
 };
