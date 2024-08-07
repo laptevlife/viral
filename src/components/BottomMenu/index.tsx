@@ -64,26 +64,6 @@ const BottomMenu = () => {
           </div>
         );
       })}
-      {/* <div className={s.bottomMenuItem} onClick={() => goTo(ERoutes.PROFILE)}>
-        <img className={s.bottomMenuItemIcon} src={Vector} />
-        <div className={s.bottomMenuItemTitle}>Profile</div>
-      </div>
-      <div className={s.bottomMenuItem} onClick={() => goTo(ERoutes.REF)}>
-        <img className={s.bottomMenuItemIcon} src={UsersThree} />
-        <div className={s.bottomMenuItemTitle}>Ref</div>
-      </div>
-      <div className={s.bottomMenuItem} onClick={() => goTo(ERoutes.TOP)}>
-        <img className={s.bottomMenuItemIcon} src={Trophy} />
-        <div className={s.bottomMenuItemTitle}>Top</div>
-      </div>
-      <div className={s.bottomMenuItem} onClick={() => goTo(ERoutes.EARN)}>
-        <img className={s.bottomMenuItemIcon} src={Lightning} />
-        <div className={s.bottomMenuItemTitle}>Earn</div>
-      </div>
-      <div className={s.bottomMenuItem} onClick={() => goTo(ERoutes.BOOSTS)}>
-        <img className={s.bottomMenuItemIcon} src={RocketLaunch} />
-        <div className={s.bottomMenuItemTitle}>Boost</div>
-      </div> */}
     </div>
   );
 };

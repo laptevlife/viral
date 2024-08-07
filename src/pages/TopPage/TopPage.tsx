@@ -15,7 +15,7 @@ const TopPage = () => {
       <div className={s.topThree}>
         <div className={cn(s.user, s.userSmallImg)}>
           <div className={s.userImage}>
-            <img src={img} />
+            <img src={img} alt="alt" />
             <div className={s.placeNumberIcon}>
               <Second />
             </div>
@@ -30,7 +30,7 @@ const TopPage = () => {
         </div>
         <div className={s.user}>
           <div className={s.userImage}>
-            <img src={img} />
+            <img src={img} alt="alt" />
             <div className={s.placeNumberIcon}>
               <First />
             </div>
@@ -45,7 +45,7 @@ const TopPage = () => {
         </div>
         <div className={cn(s.user, s.userSmallImg)}>
           <div className={s.userImage}>
-            <img src={img} />
+            <img src={img} alt="alt" />
             <div className={s.placeNumberIcon}>
               <Third />
             </div>
