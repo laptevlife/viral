@@ -23,7 +23,7 @@ const App = () => {
   useEffect(() => {
     setUser(tg?.initDataUnsafe?.user)
     setInitDataUnsafe(tg?.initDataUnsafe)
-  }, [tg, setUser, setInitDataUnsafe])
+  }, [setUser, setInitDataUnsafe])
 
   return (
     <ThemeProvider theme={theme}>
