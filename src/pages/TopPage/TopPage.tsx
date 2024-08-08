@@ -24,7 +24,7 @@ const TopPage = () => {
         <div className={s.topThree}>
           <div className={cn(s.user, s.userSmallImg)}>
             <div className={s.userImage}>
-              <img src={img} alt="alt" />
+              <img src={img} alt="" />
               <div className={s.placeNumberIcon}>
                 <Second />
               </div>
@@ -39,7 +39,7 @@ const TopPage = () => {
           </div>
           <div className={s.user}>
             <div className={s.userImage}>
-              <img src={img} alt="alt" />
+              <img src={img} alt="" />
               <div className={s.placeNumberIcon}>
                 <First />
               </div>
@@ -54,7 +54,7 @@ const TopPage = () => {
           </div>
           <div className={cn(s.user, s.userSmallImg)}>
             <div className={s.userImage}>
-              <img src={img} alt="alt" />
+              <img src={img} alt="" />
               <div className={s.placeNumberIcon}>
                 <Third />
               </div>
@@ -95,12 +95,12 @@ const TopPage = () => {
         <div className={s.boxRow}>
           <div className={cn(s.box)}>
             <UnderClaimBlock />
-            <img className={s.firstRow} src={promote} />
+            <img className={s.firstRow} src={promote} alt="" />
             <div className={s.secondRow}>Promote</div>
           </div>
           <div className={cn(s.box)}>
             <UnderClaimBlock />
-            <img className={s.firstRow} src={collab} />
+            <img className={s.firstRow} src={collab} alt="" />
             <div className={s.secondRow}>Collab</div>
           </div>
         </div>
