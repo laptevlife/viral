@@ -11,7 +11,7 @@ const ProfilePage = () => {
       <div>initDataUnsafe:</div>
       {JSON.stringify(initDataUnsafe)}
       <div>User:</div>
-      <div>{JSON.stringify(user)}</div>
+      <div>{JSON.stringify(user)}</div>s
     </PageLayout>
   );
 };
