@@ -1,5 +1,7 @@
+import PageLayout from '../../components/Layout/PageLayout';
+
 const BoostsPage = () => {
-  return <div>BoostsPage</div>;
+  return <PageLayout>BoostsPage</PageLayout>;
 };
 
 export default BoostsPage;

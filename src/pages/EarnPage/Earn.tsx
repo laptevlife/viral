@@ -1,5 +1,7 @@
+import PageLayout from '../../components/Layout/PageLayout';
+
 const EarnPage = () => {
-  return <div>EarnPage</div>;
+  return <PageLayout>EarnPage</PageLayout>;
 };
 
 export default EarnPage;

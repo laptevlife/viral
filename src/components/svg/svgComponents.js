@@ -38,7 +38,7 @@ export const Vector = () => {
     </svg>
   )
 }
-export const Substract = () => {
+export const ViralBlueIcon = () => {
   return (
     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 16.5C12.9183 16.5 16.5 12.9183 16.5 8.5C16.5 4.08172 12.9183 0.5 8.5 0.5C4.08172 0.5 0.5 4.08172 0.5 8.5C0.5 12.9183 4.08172 16.5 8.5 16.5ZM6.16724 5.02148H4.04712L7.43677 11.9785H9.60132L12.9529 5.02148H10.8582L8.573 10.2329H8.50952L6.16724 5.02148Z" fill="url(#paint0_linear_22_870)" />
@@ -64,6 +64,14 @@ export const First = () => {
         </linearGradient>
       </defs>
     </svg>
+  )
+}
+export const ViralBlackIcon = () => {
+  return (
+    <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 18.5C12.9183 18.5 16.5 14.9183 16.5 10.5C16.5 6.08172 12.9183 2.5 8.5 2.5C4.08172 2.5 0.5 6.08172 0.5 10.5C0.5 14.9183 4.08172 18.5 8.5 18.5ZM6.16724 7.02148H4.04712L7.43677 13.9785H9.60132L12.9529 7.02148H10.8582L8.573 12.2329H8.50952L6.16724 7.02148Z" fill="black" />
+    </svg>
+
   )
 }
 export const Second = () => {
@@ -94,6 +102,69 @@ export const Third = () => {
           <stop offset="0.795604" stop-color="#8A3304" />
         </linearGradient>
       </defs>
+    </svg>
+
+  )
+}
+export const YourRankBlock = () => {
+  return (
+    <svg
+      style={{ position: 'absolute', zIndex: 0 }}
+      width="100%"
+      height="111"
+      // viewBox="0 0 167 109"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="1"
+        y="1"
+        width="100%"
+        height="107"
+        rx="23"
+        fill="#1C1C1F"
+      />
+      <rect
+        x="1"
+        y="1"
+        width="99%"
+        height="107"
+        rx="23"
+        stroke="url(#paint0_linear_22_913)"
+        stroke-width="2"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_22_913"
+          x1="0"
+          y1="54.5"
+          x2="167"
+          y2="54.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#A7AFF7" />
+          <stop offset="0.35" stop-color="#C7A9FF" />
+          <stop offset="0.576383" stop-color="#E5BDFC" />
+          <stop offset="1" stop-color="#FBB4D4" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+export const YourTokensBlock = () => {
+  return (
+    <svg style={{ position: 'absolute', zIndex: 0 }} width="100%" height="109" viewBox="0 0 100% 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.5" y="0.5" width="100%" height="108" rx="23.5" fill="white" />
+      <rect x="0.5" y="0.5" width="100%" height="108" rx="23.5" stroke="#242427" />
+    </svg>
+
+  )
+}
+export const UnderClaimBlock = () => {
+  return (
+    <svg style={{ position: 'absolute', zIndex: 0 }} width="100%" height="109" viewBox="0 0 100% 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.5" y="0.5" width="100%" height="108" rx="23.5" fill="#1C1C1F" />
+      <rect x="0.5" y="0.5" width="100%" height="108" rx="23.5" stroke="#242427" />
     </svg>
 
   )

@@ -1,5 +1,7 @@
+import PageLayout from '../../components/Layout/PageLayout';
+
 const RefPage = () => {
-  return <div>RefPage</div>;
+  return <PageLayout>RefPage</PageLayout>;
 };
 
 export default RefPage;

@@ -1,0 +1,104 @@
+.tabsHead {
+  display: flex;
+  padding: 10px 0;
+}
+.tabItem {
+  border-radius: 24px;
+  font-size: 14px;
+  padding: 8px 14px;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+}
+.tabItemActive {
+  background-color: #fff;
+  color: #00120f;
+  transition: 0.3s ease-in;
+}
+.profileStatItem {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileStatItemLeft {
+  display: flex;
+  align-items: center;
+}
+.userImg {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.userImg img {
+  width: 100%;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // margin-left: 16px;
+  // margin-top: 25px;
+  // border: 1px solid green;
+}
+
+.userStatWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 64px);
+  border-bottom: 1px solid #222224;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.userImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .placeNumberIcon {
+    position: absolute;
+    bottom: -15px;
+  }
+}
+.userImage img {
+  width: 100%;
+  border-radius: 90%;
+}
+.userName {
+  font-size: 17px;
+}
+.userStat {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.profileStatRight {
+  display: flex;
+  align-items: center;
+  .click {
+    border: 1px solid #fff;
+    margin-right: 16px;
+    border-radius: 24px;
+    padding: 5px 10px 3px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .number {
+    padding-right: 16px;
+  }
+}
