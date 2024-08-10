@@ -6,7 +6,7 @@ const EarnPage = () => {
   return (
     <PageLayout>
       EarnPage
-      {JSON.parse(tg)}
+      {JSON.stringify(tg)}
     </PageLayout>
   );
 };

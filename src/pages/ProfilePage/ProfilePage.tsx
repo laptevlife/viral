@@ -13,9 +13,9 @@ const ProfilePage = () => {
       </div>
       <div className={s.userName}>{user?.username}</div>
       <div style={{ marginTop: '50px' }}>initDataUnsafe:</div>
-      {JSON.parse(initDataUnsafe)}
+      {JSON.stringify(initDataUnsafe)}
       <div>User:</div>
-      <div>{JSON.parse(user)}</div>s
+      <div>{JSON.stringify(user)}</div>s
     </PageLayout>
   );
 };
