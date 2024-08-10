@@ -1,14 +1,18 @@
 import PageLayout from '../../components/Layout/PageLayout';
 import { useAppSelector } from '../../hooks/redux';
+import s from './index.module.scss';
+import img from '../../assets/img/testImg.jpg';
 
 const ProfilePage = () => {
   const { user, initDataUnsafe } = useAppSelector((state) => state.userReducer);
 
   return (
     <PageLayout>
-      <div>ProfilePage</div>
-      User name: {user?.username}
-      <div>initDataUnsafe:</div>
+      <div className={s.userProfileImage}>
+        <img src={img} alt="" />
+      </div>
+      <div className={s.userName}>{user?.username}</div>
+      <div style={{ marginTop: '50px' }}>initDataUnsafe:</div>
       {JSON.stringify(initDataUnsafe)}
       <div>User:</div>
       <div>{JSON.stringify(user)}</div>s

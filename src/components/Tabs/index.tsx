@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import s from './index.module.scss';
 import cn from 'classnames';
 import PageLayout from '../Layout/PageLayout';
-import { ViralBlueIcon } from '../svg/svgComponents';
+import { ArrowTopBold, ViralBlueIcon } from '../svg/svgComponents';
 import img from '../../assets/img/testImg.jpg';
 
 const Tabs = () => {
@@ -39,14 +39,16 @@ const Tabs = () => {
           })}
         </div>
       </PageLayout>
+      <div className={s.hr} />
       <div className={s.tabsContentWrapper}>
         {[1, 2, 3, 4, 5, 5].map((i) => {
           return (
             <div className={s.profileStatItem}>
-              <div className={s.userImg}>
-                <img src={img} alt="" />
-              </div>
+              <div className={s.number}>{i}</div>
               <div className={s.userStatWrapper}>
+                <div className={s.userImg}>
+                  <img src={img} alt="" />
+                </div>
                 <div className={s.profileStatItemLeft}>
                   <div className={s.userInfo}>
                     <div className={s.userName}>Yagit Lera</div>
@@ -57,8 +59,10 @@ const Tabs = () => {
                   </div>
                 </div>
                 <div className={s.profileStatRight}>
-                  <div className={s.click}>VOTE</div>
-                  <div className={s.number}>4</div>
+                  <div className={s.click}>
+                    <ArrowTopBold />
+                  </div>
+                  {/* <div className={s.number}>4</div> */}
                 </div>
               </div>
             </div>

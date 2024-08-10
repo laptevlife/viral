@@ -1,13 +1,13 @@
 .tabsHead {
   display: flex;
-  padding: 10px 0;
+  // padding: 10px 0;
 }
 .tabItem {
   border-radius: 24px;
   font-size: 14px;
   padding: 8px 14px;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -25,10 +25,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .number {
+    width: 20px;
+    height: 20px;
+    background-color: #27272a;
+    border-radius: 90%;
+    display: block;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .profileStatItemLeft {
   display: flex;
   align-items: center;
+  margin-left: 16px;
 }
 .userImg {
   position: relative;
@@ -52,8 +64,10 @@
 .userStatWrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 64px);
+  // justify-content: space-between;
+  width: calc(100% - 30px);
+  // width: 100%;
+  // padding-left: 16px;
   border-bottom: 1px solid #222224;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -90,17 +104,20 @@
 .profileStatRight {
   display: flex;
   align-items: center;
+  margin-left: auto;
   .click {
-    border: 1px solid #fff;
+    border: 1px solid #404043;
     margin-right: 16px;
     border-radius: 24px;
-    padding: 5px 10px 3px 10px;
+    // padding: 5px 10px 3px 10px;
+    padding: 10px;
     font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .number {
-    padding-right: 16px;
-  }
+}
+.hr {
+  border-bottom: 1px solid #222224;
+  width: 100%;
 }

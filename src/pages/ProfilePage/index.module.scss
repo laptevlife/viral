@@ -1,0 +1,17 @@
+.userProfileImage {
+  width: 96px;
+  height: 96px;
+  border-radius: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  img {
+    width: 100%;
+  }
+}
+.userName {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 17px;
+}

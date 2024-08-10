@@ -17,21 +17,6 @@ const BottomMenu = () => {
 
   const menuItems = [
     {
-      ref: ERoutes.PROFILE,
-      icon: <Vector />,
-      name: 'Profile',
-    },
-    {
-      ref: ERoutes.REF,
-      icon: <UsersThree />,
-      name: 'Ref',
-    },
-    {
-      ref: ERoutes.TOP,
-      icon: <Trophy />,
-      name: 'Top',
-    },
-    {
       ref: ERoutes.EARN,
       icon: <Lightning />,
       name: 'Earn',
@@ -40,6 +25,21 @@ const BottomMenu = () => {
       ref: ERoutes.BOOSTS,
       icon: <RocketLaunch />,
       name: 'Boost',
+    },
+    {
+      ref: ERoutes.TOP,
+      icon: <Trophy />,
+      name: 'Top',
+    },
+    {
+      ref: ERoutes.REF,
+      icon: <UsersThree />,
+      name: 'Frens',
+    },
+    {
+      ref: ERoutes.PROFILE,
+      icon: <Vector />,
+      name: 'Profile',
     },
   ];
 

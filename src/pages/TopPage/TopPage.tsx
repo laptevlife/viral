@@ -2,15 +2,16 @@ import React from 'react';
 import cn from 'classnames';
 import s from './index.module.scss';
 import img from '../../assets/img/testImg.jpg';
+
 import {
   First,
   Second,
   ViralBlueIcon,
   Third,
   UnderClaimBlock,
-  YourRankBlock,
-  YourTokensBlock,
-  ViralBlackIcon,
+  GradientBg,
+  ViralWhiteIcon,
+  ArrowRight,
 } from '../../components/svg/svgComponents';
 import collab from '../../assets/img/collab.png';
 import promote from '../../assets/img/promote.png';
@@ -71,13 +72,14 @@ const TopPage = () => {
 
         <div className={s.boxRow}>
           <div className={cn(s.box, s.boxWhite)}>
-            <YourTokensBlock />
+            {/* <YourTokensBlock /> */}
             <div className={s.firstRow}>2.8K</div>
             <div className={s.secondRow}>Your tokens</div>
           </div>
-          <div className={cn(s.box)}>
-            <YourRankBlock />
-            <div className={s.firstRow}>204</div>
+          <GradientBg />
+          <div className={cn(s.box, s.yourRank)}>
+            {/* <YourRankBlock /> */}
+            <div className={s.firstRow}>#204,311</div>
             <div className={s.secondRow}>Your rank</div>
           </div>
         </div>
@@ -86,22 +88,28 @@ const TopPage = () => {
           <div className={s.content}>
             <div className={s.btnText}>Claim</div>
             <div className={s.claimCount}>
-              <ViralBlackIcon />
+              <ViralWhiteIcon />
               120
             </div>
           </div>
         </div>
 
-        <div className={s.boxRow}>
-          <div className={cn(s.box)}>
+        <div className={cn(s.boxRow)}>
+          <div className={cn(s.box, s.underClaimBlock)}>
             <UnderClaimBlock />
             <img className={s.firstRow} src={promote} alt="" />
-            <div className={s.secondRow}>Promote</div>
+            <div className={s.secondRow}>
+              <span>Promote</span>
+              <ArrowRight />
+            </div>
           </div>
-          <div className={cn(s.box)}>
+          <div className={cn(s.box, s.underClaimBlock)}>
             <UnderClaimBlock />
             <img className={s.firstRow} src={collab} alt="" />
-            <div className={s.secondRow}>Collab</div>
+            <div className={s.secondRow}>
+              <span>Collab</span>
+              <ArrowRight />
+            </div>
           </div>
         </div>
       </PageLayout>

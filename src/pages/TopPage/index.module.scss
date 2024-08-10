@@ -58,23 +58,23 @@
 }
 .gradientBorder {
   position: relative;
-  padding: 2px; /* Внутренний отступ для контента */
+  // padding: 2px; /* Внутренний отступ для контента */
   background: linear-gradient(45deg, #9bb4f5, #e9b9d5); /* Градиент для границы */
   border-radius: 24px; /* Закругление углов */
 }
 
-.gradientBorder::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit; /* Наследуем градиент */
-  z-index: -1; /* Убираем на задний план */
-  border-radius: 24px; /* Закругление углов */
-  filter: blur(5px); /* Размытие границы */
-}
+// .gradientBorder::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: inherit; /* Наследуем градиент */
+//   z-index: -1; /* Убираем на задний план */
+//   border-radius: 24px; /* Закругление углов */
+//   filter: blur(5px); /* Размытие границы */
+// }
 
 .boxRow {
   display: flex;
@@ -83,7 +83,7 @@
   gap: 8px;
   width: 100%;
   position: relative;
-  margin-top: 30px;
+  margin-top: 16px;
   .box {
     height: 109px;
     width: 50%;
@@ -94,6 +94,7 @@
     flex-direction: column;
     // box-sizing: border-box;
     position: relative;
+    z-index: 9;
     img {
       margin-bottom: 8px;
     }
@@ -108,8 +109,35 @@
       z-index: 1;
     }
   }
+
+  .underClaimBlock {
+    align-items: start;
+    .firstRow {
+      // padding: 0 16px;
+      margin-left: 16px;
+      font-weight: bold;
+      font-size: 32px;
+      z-index: 1;
+    }
+    .secondRow {
+      // padding: 0 16px;
+      margin-left: 16px;
+      font-weight: medium;
+      font-size: 15px;
+      z-index: 1;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      width: 85%;
+      justify-content: space-between;
+    }
+  }
+  .yourRank {
+    background-color: #1c1c1f;
+  }
   .boxWhite {
-    // background-color: #fff;
+    background-color: #fff;
+    // border: 1px solid red;
     color: #00120f;
     // div {
     //   color: #1c1c1f;
@@ -124,7 +152,7 @@
   // }
 }
 .claimBtn {
-  margin-top: 20px;
+  margin-top: 16px;
   height: 53px;
   border-radius: 16px;
   display: flex;
@@ -141,9 +169,10 @@
     .claimCount {
       display: flex;
       border-radius: 16px;
-      background-color: #fff;
+      background-color: #000000;
       align-items: center;
       padding: 5px 10px;
+      color: #fff;
     }
   }
 }
