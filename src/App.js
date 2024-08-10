@@ -20,7 +20,7 @@ const theme = createTheme({
 });
 
 const App = () => {
-  const { setUser, setInitDataUnsafe, setTg } = useActions(userSlice.actions);
+  const { setUser, setInitDataUnsafe, setTg, setTgUser } = useActions(userSlice.actions);
   useEffect(() => {
     setTg(tg)
     setTgUser(tgUser)
