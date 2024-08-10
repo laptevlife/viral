@@ -24,7 +24,7 @@ const App = () => {
     setTg(tg)
     setUser(tg?.initDataUnsafe?.user)
     setInitDataUnsafe(tg?.initDataUnsafe)
-  }, [setUser, setInitDataUnsafe])
+  }, [setUser, setInitDataUnsafe, setTg])
 
   return (
     <ThemeProvider theme={theme}>
