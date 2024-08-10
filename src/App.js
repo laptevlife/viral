@@ -9,6 +9,7 @@ import BottomMenu from './components/BottomMenu';
 import { useActions } from './hooks/redux';
 import { userSlice } from './features/userSlice';
 const tg = window.Telegram.WebApp
+const tgUser = window.Telegram.WebAppUser
 
 const theme = createTheme({
   palette: {
@@ -22,9 +23,10 @@ const App = () => {
   const { setUser, setInitDataUnsafe, setTg } = useActions(userSlice.actions);
   useEffect(() => {
     setTg(tg)
+    setTgUser(tgUser)
     setUser(tg?.initDataUnsafe?.user)
     setInitDataUnsafe(tg?.initDataUnsafe)
-  }, [setUser, setInitDataUnsafe, setTg])
+  }, [setTgUser, setUser, setInitDataUnsafe, setTg])
 
   return (
     <ThemeProvider theme={theme}>

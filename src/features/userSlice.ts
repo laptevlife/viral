@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState: any = {
   user: null,
   initDataUnsafe: null,
-  tg: null
+  tg: null,
+  tgUser: null
 }
 
 export const userSlice = createSlice({
@@ -18,6 +19,9 @@ export const userSlice = createSlice({
     },
     setInitDataUnsafe(state, action) {
       state.initDataUnsafe = action.payload;
+    },
+    setTgUser(state, action) {
+      state.tgUser = action.payload;
     },
   },
 });
