@@ -1,5 +1,4 @@
 import React from 'react'
-import s from './index.module.scss'
 import V from '../../assets/img/V.png'
 // import V from '../../assets/img/V.png'
 

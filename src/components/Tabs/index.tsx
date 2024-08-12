@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import s from './index.module.scss';
 import cn from 'classnames';
 import PageLayout from '../Layout/PageLayout';
-import { ArrowTopBold, ViralBlueIcon } from '../svg/svgComponents';
-import img from '../../assets/img/testImg.jpg';
+
 import UserProfileRow from '../UserProfileRow';
 
 const Tabs = () => {
