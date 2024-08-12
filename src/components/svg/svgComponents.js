@@ -1,4 +1,7 @@
 import React from 'react'
+import s from './index.module.scss'
+import V from '../../assets/img/V.png'
+// import V from '../../assets/img/V.png'
 
 export const Lightning = () => {
   return (
@@ -21,6 +24,10 @@ export const Trophy = () => {
     <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M19.7507 21.875H9.25067M19.7507 21.875C21.6837 21.875 23.2507 23.442 23.2507 25.375H5.75067C5.75067 23.442 7.31767 21.875 9.25067 21.875M19.7507 21.875V17.9375C19.7507 17.2126 19.163 16.625 18.4382 16.625H17.4213M9.25067 21.875V17.9375C9.25067 17.2126 9.83829 16.625 10.5632 16.625H11.5801M17.4213 16.625H11.5801M17.4213 16.625C16.7827 15.5211 16.3784 14.2648 16.2762 12.924M11.5801 16.625C12.2186 15.5211 12.623 14.2648 12.7251 12.924M6.62567 4.94242C5.47965 5.10907 4.34525 5.31154 3.22363 5.54868C3.749 8.66074 6.32808 11.075 9.51859 11.349M6.62567 4.94242V5.25C6.62567 7.70908 7.75279 9.9049 9.51859 11.349M6.62567 4.94242V3.17438C9.19866 2.81226 11.8278 2.625 14.5007 2.625C17.1735 2.625 19.8027 2.81226 22.3757 3.17438V4.94242M9.51859 11.349C10.4374 12.1005 11.5292 12.6484 12.7251 12.924M22.3757 4.94242V5.25C22.3757 7.70908 21.2485 9.9049 19.4827 11.349M22.3757 4.94242C23.5217 5.10907 24.6561 5.31155 25.7777 5.54868C25.2523 8.66074 22.6733 11.075 19.4827 11.349M19.4827 11.349C18.5639 12.1005 17.4721 12.6484 16.2762 12.924M16.2762 12.924C15.7056 13.0555 15.1112 13.125 14.5007 13.125C13.8901 13.125 13.2957 13.0555 12.7251 12.924" stroke="#78797E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
+    // <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <path d="M19.7507 21.875H9.25067M19.7507 21.875C21.6837 21.875 23.2507 23.442 23.2507 25.375H5.75067C5.75067 23.442 7.31767 21.875 9.25067 21.875M19.7507 21.875V17.9375C19.7507 17.2126 19.163 16.625 18.4382 16.625H17.4213M9.25067 21.875V17.9375C9.25067 17.2126 9.83829 16.625 10.5632 16.625H11.5801M17.4213 16.625H11.5801M17.4213 16.625C16.7827 15.5211 16.3784 14.2648 16.2762 12.924M11.5801 16.625C12.2186 15.5211 12.623 14.2648 12.7251 12.924M6.62567 4.94242C5.47965 5.10907 4.34525 5.31154 3.22363 5.54868C3.749 8.66074 6.32808 11.075 9.51859 11.349M6.62567 4.94242V5.25C6.62567 7.70908 7.75279 9.9049 9.51859 11.349M6.62567 4.94242V3.17438C9.19866 2.81226 11.8278 2.625 14.5007 2.625C17.1735 2.625 19.8027 2.81226 22.3757 3.17438V4.94242M9.51859 11.349C10.4374 12.1005 11.5292 12.6484 12.7251 12.924M22.3757 4.94242V5.25C22.3757 7.70908 21.2485 9.9049 19.4827 11.349M22.3757 4.94242C23.5217 5.10907 24.6561 5.31155 25.7777 5.54868C25.2523 8.66074 22.6733 11.075 19.4827 11.349M19.4827 11.349C18.5639 12.1005 17.4721 12.6484 16.2762 12.924M16.2762 12.924C15.7056 13.0555 15.1112 13.125 14.5007 13.125C13.8901 13.125 13.2957 13.0555 12.7251 12.924" stroke="#F2B8E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    // </svg>
+
 
   )
 }
@@ -41,17 +48,20 @@ export const Vector = () => {
 }
 export const ViralBlueIcon = () => {
   return (
-    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 16C12.9183 16 16.5 12.4183 16.5 8C16.5 3.58172 12.9183 0 8.5 0C4.08172 0 0.5 3.58172 0.5 8C0.5 12.4183 4.08172 16 8.5 16ZM6.16724 4.52148H4.04712L7.43677 11.4785H9.60132L12.9529 4.52148H10.8582L8.573 9.73291H8.50952L6.16724 4.52148Z" fill="url(#paint0_linear_413_1922)" />
-      <defs>
-        <linearGradient id="paint0_linear_413_1922" x1="0.5" y1="8" x2="16.5" y2="8" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#A7AFF7" />
-          <stop offset="0.35" stop-color="#C7A9FF" />
-          <stop offset="0.576383" stop-color="#E5BDFC" />
-          <stop offset="1" stop-color="#FBB4D4" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <img style={{ width: '17px', height: '16px' }} sty src={V} alt='' />
+
+
+    // <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 16C12.9183 16 16.5 12.4183 16.5 8C16.5 3.58172 12.9183 0 8.5 0C4.08172 0 0.5 3.58172 0.5 8C0.5 12.4183 4.08172 16 8.5 16ZM6.16724 4.52148H4.04712L7.43677 11.4785H9.60132L12.9529 4.52148H10.8582L8.573 9.73291H8.50952L6.16724 4.52148Z" fill="url(#paint0_linear_413_1922)" />
+    //   <defs>
+    //     <linearGradient id="paint0_linear_413_1922" x1="0.5" y1="8" x2="16.5" y2="8" gradientUnits="userSpaceOnUse">
+    //       <stop stop-color="#A7AFF7" />
+    //       <stop offset="0.35" stop-color="#C7A9FF" />
+    //       <stop offset="0.576383" stop-color="#E5BDFC" />
+    //       <stop offset="1" stop-color="#FBB4D4" />
+    //     </linearGradient>
+    //   </defs>
+    // </svg>
 
   )
 }
@@ -89,21 +99,22 @@ export const ViralWhiteIcon = () => {
 export const GradientBg = () => {
   return (
 
-    <svg style={{
+    <svg width="232" height="192" style={{
       position: 'absolute',
-      right: '-40px',
+      left: '-18px',
+      top: '-55px',
       zIndex: 0
-    }} width="263" height="192" viewBox="0 0 263 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g filter="url(#filter0_f_423_3628)">
-        <rect x="48" y="48" width="167" height="96" rx="24" fill="url(#paint0_linear_423_3628)" />
+    }} viewBox="0 0 232 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_509_17031)">
+        <rect x="17" y="48" width="167" height="96" rx="24" fill="url(#paint0_linear_509_17031)" />
       </g>
       <defs>
-        <filter id="filter0_f_423_3628" x="0" y="0" width="263" height="192" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter id="filter0_f_509_17031" x="-31" y="0" width="263" height="192" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-          <feGaussianBlur stdDeviation="24" result="effect1_foregroundBlur_423_3628" />
+          <feGaussianBlur stdDeviation="24" result="effect1_foregroundBlur_509_17031" />
         </filter>
-        <linearGradient id="paint0_linear_423_3628" x1="48" y1="96" x2="215" y2="96" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint0_linear_509_17031" x1="17" y1="96" x2="184" y2="96" gradientUnits="userSpaceOnUse">
           <stop stop-color="#A7AFF7" />
           <stop offset="0.35" stop-color="#C7A9FF" />
           <stop offset="0.576383" stop-color="#E5BDFC" />
@@ -111,6 +122,8 @@ export const GradientBg = () => {
         </linearGradient>
       </defs>
     </svg>
+
+
 
   )
 }
@@ -126,6 +139,22 @@ export const Second = () => {
           <stop offset="0.795604" stop-color="#848484" />
         </linearGradient>
       </defs>
+    </svg>
+
+  )
+}
+export const Energy = () => {
+  return (
+    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.4834 1.40718C10.5546 1.07461 10.3932 0.735712 10.09 0.581525C9.78684 0.427338 9.41787 0.496463 9.19108 0.749936L0.691082 10.2499C0.493853 10.4704 0.444603 10.7861 0.565334 11.0562C0.686065 11.3262 0.954227 11.5 1.25001 11.5H7.82227L6.51666 17.5929C6.4454 17.9255 6.60685 18.2644 6.91002 18.4185C7.21318 18.5727 7.58215 18.5036 7.80894 18.2501L16.3089 8.75013C16.5062 8.5297 16.5554 8.21393 16.4347 7.9439C16.314 7.67388 16.0458 7.50003 15.75 7.50003H9.17775L10.4834 1.40718Z" fill="white" />
+    </svg>
+
+  )
+}
+export const LockIcon = () => {
+  return (
+    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1.5C9.60051 1.5 7.25 3.85051 7.25 6.75V9.75C5.59315 9.75 4.25 11.0931 4.25 12.75V19.5C4.25 21.1569 5.59315 22.5 7.25 22.5H17.75C19.4069 22.5 20.75 21.1569 20.75 19.5V12.75C20.75 11.0931 19.4069 9.75 17.75 9.75V6.75C17.75 3.85051 15.3995 1.5 12.5 1.5ZM16.25 9.75V6.75C16.25 4.67893 14.5711 3 12.5 3C10.4289 3 8.75 4.67893 8.75 6.75V9.75H16.25Z" fill="white" fill-opacity="0.44" />
     </svg>
 
   )

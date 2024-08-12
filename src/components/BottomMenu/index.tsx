@@ -46,10 +46,15 @@ const BottomMenu = () => {
   return (
     <div className={s.bottomMenu}>
       {menuItems.map((i) => {
+        const isActive = location.pathname === i.ref;
         return (
           <div
             className={cn(s.bottomMenuItem, {
-              [s.activeItem]: location.pathname === i.ref,
+              [s.activeItemFill]:
+                isActive &&
+                (i.ref === ERoutes.EARN || i.ref === ERoutes.PROFILE),
+              [s.activeItemStroke]:
+                isActive && i.ref !== ERoutes.EARN && i.ref !== ERoutes.PROFILE,
             })}
             onClick={() => goTo(i.ref)}
           >

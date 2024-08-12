@@ -4,6 +4,7 @@ import cn from 'classnames';
 import PageLayout from '../Layout/PageLayout';
 import { ArrowTopBold, ViralBlueIcon } from '../svg/svgComponents';
 import img from '../../assets/img/testImg.jpg';
+import UserProfileRow from '../UserProfileRow';
 
 const Tabs = () => {
   const tabsArray = [
@@ -41,31 +42,32 @@ const Tabs = () => {
       </PageLayout>
       <div className={s.hr} />
       <div className={s.tabsContentWrapper}>
-        {[1, 2, 3, 4, 5, 5].map((i) => {
+        {[1, 2, 3, 4, 5, 50, 100, 1000, 10000].map((i) => {
           return (
-            <div className={s.profileStatItem}>
-              <div className={s.number}>{i}</div>
-              <div className={s.userStatWrapper}>
-                <div className={s.userImg}>
-                  <img src={img} alt="" />
-                </div>
-                <div className={s.profileStatItemLeft}>
-                  <div className={s.userInfo}>
-                    <div className={s.userName}>Yagit Lera</div>
-                    <div className={s.userStat}>
-                      <ViralBlueIcon />
-                      34,366,837
-                    </div>
-                  </div>
-                </div>
-                <div className={s.profileStatRight}>
-                  <div className={s.click}>
-                    <ArrowTopBold />
-                  </div>
-                  {/* <div className={s.number}>4</div> */}
-                </div>
-              </div>
-            </div>
+            <UserProfileRow i={i} />
+            // <div className={s.profileStatItem}>
+            //   <div className={s.userStatWrapper}>
+            //     <div className={s.userImg}>
+            //       <img src={img} alt="" />
+            //     </div>
+            //     <div className={s.profileStatItemLeft}>
+            //       <div className={s.userInfo}>
+            //         <div className={s.userName}>Yagit Lera</div>
+            //         <div className={s.userStat}>
+            //           <ViralBlueIcon />
+            //           34,366,837
+            //         </div>
+            //       </div>
+            //     </div>
+            //     <div className={s.profileStatRight}>
+            //       <div className={s.number}>{i}</div>
+            //       <div className={s.click}>
+            //         <ArrowTopBold />
+            //       </div>
+            //       {/* <div className={s.number}>4</div> */}
+            //     </div>
+            //   </div>
+            // </div>
           );
         })}
       </div>
