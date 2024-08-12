@@ -98,9 +98,9 @@ export const ViralWhiteIcon = () => {
 export const GradientBg = () => {
   return (
 
-    <svg width="232" height="192" style={{
+    <svg width="70%" height="192" style={{
       position: 'absolute',
-      left: '-18px',
+      left: '-7%',
       top: '-55px',
       zIndex: 0
     }} viewBox="0 0 232 192" fill="none" xmlns="http://www.w3.org/2000/svg">

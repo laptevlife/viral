@@ -41,7 +41,7 @@ const Tabs = () => {
       </PageLayout>
       <div className={s.hr} />
       <div className={s.tabsContentWrapper}>
-        {[1, 2, 3, 4, 5, 50, 100, 1000, 10000].map((i) => {
+        {[1, 2, 3, 4, 5, 50, 100, 1000, 10000, 999999].map((i) => {
           return (
             <UserProfileRow i={i} />
             // <div className={s.profileStatItem}>
