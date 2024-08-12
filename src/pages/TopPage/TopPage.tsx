@@ -10,11 +10,8 @@ import {
   Second,
   ViralBlueIcon,
   Third,
-  UnderClaimBlock,
   GradientBg,
-  ViralWhiteIcon,
   ArrowRight,
-  Energy,
   LockIcon,
 } from '../../components/svg/svgComponents';
 import collab from '../../assets/img/collab.png';
