@@ -4,7 +4,7 @@
   border-radius: 90%;
   margin: auto;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 30px;
   img {
     width: 100%;
   }
@@ -12,6 +12,87 @@
 .userName {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 17px;
+}
+.profileDescription {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #b9b9ba;
+  font-family: "FeatureMono", sans-serif;
+  margin-top: 10px;
+}
+
+.boxRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  position: relative;
+  margin-top: 16px;
+
+  .boxStat {
+    display: flex;
+    justify-content: start;
+    padding-left: 16px;
+  }
+}
+
+.box {
+  height: 72px;
+  width: 50%;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+  background-color: #1c1c1f;
+
+  .statImg {
+    height: 40px;
+    width: 40px;
+  }
+  .statData {
+    margin-left: 10px;
+  }
+  .firstRow {
+    font-weight: medium;
+    font-size: 14px;
+    z-index: 1;
+    font-family: "FeatureMono", sans-serif;
+    color: #8d8d8f;
+  }
+  .secondRow {
+    font-weight: 600;
+    font-size: 15px;
+    z-index: 1;
+  }
+}
+
+.linksBlock {
+  background-color: #1c1c1f;
+  border-radius: 24px;
+  margin-top: 16px;
+  // padding: 0 16px;
+  position: relative;
+  overflow: hidden;
+  .box {
+    box-sizing: border-box;
+    justify-content: start;
+    height: 64px;
+    border-bottom: 1px solid #252529;
+    width: 100%;
+    padding: 0 16px;
+    border-radius: 0;
+    .firstRow {
+      font-family: "Monrope", sans-serif !important;
+    }
+    // font-family: "FeatureMono", sans-serif;
+  }
+}
+.voteBtn {
+  margin-top: 16px;
 }

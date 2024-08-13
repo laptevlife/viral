@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import s from './index.module.scss';
 import img from '../../assets/img/testImg.jpg';
-import V from '../../assets/img/V.png';
-import Coin from '../../assets/img/Coin.png';
+import V from '../../assets/img/V.svg';
+import Coin from '../../assets/img/Coin.svg';
+import Top from '../../assets/img/Top.svg';
 
 import {
   First,
@@ -13,25 +14,23 @@ import {
   GradientBg,
   ArrowRight,
   LockIcon,
+  ShareArrowIcon,
+  CopyIcon,
 } from '../../components/svg/svgComponents';
-import collab from '../../assets/img/collab.png';
-import promote from '../../assets/img/promote.png';
+import collab from '../../assets/img/collab.svg';
+import promote from '../../assets/img/promote.svg';
 import PageLayout from '../../components/Layout/PageLayout';
 import Tabs from '../../components/Tabs';
 import UserProfileRow from '../../components/UserProfileRow';
 import { useAppSelector } from '../../hooks/redux';
+import Modal from '../../components/Modal';
+import Button from '../../components/Button';
+import Profile from '../ProfilePage/Profile';
 
 const TopPage = () => {
+  const [modalPromoteOpen, setOpenPromoteModal] = useState(false);
+  const [modalProfileOpen, setOpenProfileModal] = useState(false);
   const { tg } = useAppSelector((state) => state.userReducer);
-  const onPromote = () => {
-    console.log('tg', tg);
-
-    tg.showPopup({
-      // url: 'https://example.com', // URL для открытия в поп-апе
-      width: 400, // ширина поп-апа
-      height: 600, // высота поп-апа
-    });
-  };
 
   const [step, setStep] = useState(1);
   const [progress, setProgress] = useState(0);
@@ -171,7 +170,9 @@ const TopPage = () => {
         <div className={cn(s.boxRow)}>
           <div
             className={cn(s.box, s.underClaimBlock)}
-            onClick={() => onPromote()}
+            onClick={() => {
+              setOpenPromoteModal(true);
+            }}
           >
             {/* <UnderClaimBlock /> */}
             <img className={s.firstRow} src={promote} alt="" />
@@ -189,8 +190,42 @@ const TopPage = () => {
             </div>
           </div>
         </div>
+        <Modal
+          isOpen={modalPromoteOpen}
+          closeModal={() => setOpenPromoteModal(false)}
+        >
+          <div className={s.topImg}>
+            <img src={Top} alt="" />
+          </div>
+          <div className={s.shareContent}>
+            <div className={s.shareTitle}>
+              Share your profile to frens <br /> and promote yourself
+            </div>
+            <div className={s.shareDescription}>
+              For every vote you receive, you earn <br /> 10 VIRALS
+            </div>
+            <div className={s.shareActions}>
+              <Button className={s.shareBtn}>
+                {' '}
+                <span>Share</span>{' '}
+                <span>
+                  <ShareArrowIcon />
+                </span>
+              </Button>
+              <div className={s.copyLink}>
+                <CopyIcon />{' '}
+              </div>
+            </div>
+          </div>
+        </Modal>
+        <Modal
+          isOpen={modalProfileOpen}
+          closeModal={() => setOpenProfileModal(false)}
+        >
+          <Profile currentUser={false} />
+        </Modal>
       </PageLayout>
-      <div className={s.greyPaper}>
+      <div className={s.greyPaper} onClick={() => setOpenProfileModal(true)}>
         <Tabs />
       </div>
       <div className={s.currentUserProfileRow}>

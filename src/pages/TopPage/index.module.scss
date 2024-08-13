@@ -305,3 +305,52 @@
   // border: 1px soli;
   background-color: #171717;
 }
+
+.topImg {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+.shareContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .shareTitle {
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+  }
+  .shareDescription {
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    color: #b9b9ba;
+    font-family: "FeatureMono", sans-serif;
+    margin-top: 15px;
+  }
+  .shareActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .copyLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2f;
+    gap: 8px;
+    height: 56px;
+    width: 56px;
+    border-radius: 12px;
+    // width: ;
+  }
+  .shareBtn {
+    width: calc(100% - 64px);
+    // svg {
+    //   margin-top: 8px;
+    //   margin-left: 10px;
+    // }
+  }
+}
