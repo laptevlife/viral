@@ -22,7 +22,7 @@ import promote from '../../assets/img/promote.svg';
 import PageLayout from '../../components/Layout/PageLayout';
 import Tabs from '../../components/Tabs';
 import UserProfileRow from '../../components/UserProfileRow';
-import { useAppSelector } from '../../hooks/redux';
+// import { useAppSelector } from '../../hooks/redux';
 import Modal from '../../components/Modal';
 import Button from '../../components/Button';
 import Profile from '../ProfilePage/Profile';
@@ -30,7 +30,7 @@ import Profile from '../ProfilePage/Profile';
 const TopPage = () => {
   const [modalPromoteOpen, setOpenPromoteModal] = useState(false);
   const [modalProfileOpen, setOpenProfileModal] = useState(false);
-  const { tg } = useAppSelector((state) => state.userReducer);
+  // const { tg } = useAppSelector((state) => state.userReducer);
 
   const [step, setStep] = useState(1);
   const [progress, setProgress] = useState(0);
