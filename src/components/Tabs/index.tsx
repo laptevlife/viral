@@ -42,32 +42,7 @@ const Tabs = () => {
       <div className={s.hr} />
       <div className={s.tabsContentWrapper}>
         {[1, 2, 3, 4, 5, 50, 100, 1000, 10000, 999999].map((i) => {
-          return (
-            <UserProfileRow i={i} />
-            // <div className={s.profileStatItem}>
-            //   <div className={s.userStatWrapper}>
-            //     <div className={s.userImg}>
-            //       <img src={img} alt="" />
-            //     </div>
-            //     <div className={s.profileStatItemLeft}>
-            //       <div className={s.userInfo}>
-            //         <div className={s.userName}>Yagit Lera</div>
-            //         <div className={s.userStat}>
-            //           <ViralBlueIcon />
-            //           34,366,837
-            //         </div>
-            //       </div>
-            //     </div>
-            //     <div className={s.profileStatRight}>
-            //       <div className={s.number}>{i}</div>
-            //       <div className={s.click}>
-            //         <ArrowTopBold />
-            //       </div>
-            //       {/* <div className={s.number}>4</div> */}
-            //     </div>
-            //   </div>
-            // </div>
-          );
+          return <UserProfileRow i={i} />;
         })}
       </div>
     </div>

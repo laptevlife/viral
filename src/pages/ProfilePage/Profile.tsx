@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './index.module.scss';
 import img from '../../assets/img/testImg.jpg';
 import V from '../../assets/img/V.svg';
@@ -8,14 +8,18 @@ import inst from '../../assets/img/inst.svg';
 import X from '../../assets/img/x.svg';
 import cn from 'classnames';
 import {
+  AddPersonIcon,
   ArrowRightIcon,
   ArrowTopBlack,
+  LockIcon,
+  ShareWhiteArrowIcon,
 } from '../../components/svg/svgComponents';
 import Button from '../../components/Button';
 
-const Profile = ({ currentUser = true }: any) => {
+const Profile = ({ currentUser = true, action }: any) => {
+  const [lockedCollab, setLocked] = useState(true);
   return (
-    <div>
+    <div className={s.profile}>
       <div className={s.userProfileImage}>
         <img src={img} alt="" />
       </div>
@@ -24,6 +28,27 @@ const Profile = ({ currentUser = true }: any) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
         quam facere iusto ratione sed, ad reiciendis quis eum tenetur illum
         atque praesentium
+      </div>
+      <div className={s.collabRow}>
+        <div
+          className={cn(s.collabBtn, {
+            [s.lockedCollab]: lockedCollab,
+          })}
+          onClick={() => setLocked((locked) => !locked)}
+        >
+          INVITE TO COLLAB
+          {lockedCollab ? (
+            <>
+              <LockIcon style={{ marginLeft: '10px' }} />
+              <div className={s.coming}>Coming soon</div>
+            </>
+          ) : (
+            <AddPersonIcon style={{ marginLeft: '10px' }} />
+          )}
+        </div>
+        <div className={s.icon}>
+          <ShareWhiteArrowIcon />
+        </div>
       </div>
 
       <div className={s.boxRow}>
@@ -70,7 +95,7 @@ const Profile = ({ currentUser = true }: any) => {
         </div>
       </div>
       {!currentUser && (
-        <Button className={s.voteBtn}>
+        <Button className={s.voteBtn} onClick={action}>
           {' '}
           <span>Vote</span>{' '}
           <span>

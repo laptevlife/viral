@@ -10,14 +10,6 @@ const ProfilePage = () => {
   return (
     <PageLayout>
       <Profile />
-      {/* <div className={s.userProfileImage}>
-        <img src={img} alt="" />
-      </div>
-      <div className={s.userName}>{user?.username}</div>
-      <div style={{ marginTop: '50px' }}>initDataUnsafe:</div>
-      {JSON.stringify(initDataUnsafe)} */}
-      {/* <div>User:</div>
-      <div>{JSON.stringify(user)}</div>s */}
     </PageLayout>
   );
 };
