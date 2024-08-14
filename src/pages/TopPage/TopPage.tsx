@@ -4,7 +4,6 @@ import s from './index.module.scss';
 import img from '../../assets/img/testImg.jpg';
 import V from '../../assets/img/V.svg';
 import Coin from '../../assets/img/Coin.svg';
-import Coin1 from '../../assets/img/Coin (2).svg';
 import Coin2 from '../../assets/img/Group 24.svg';
 import Coin3 from '../../assets/img/Group 25.svg';
 import Top from '../../assets/img/Top.svg';
