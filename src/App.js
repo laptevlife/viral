@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { createTheme, ThemeProvider } from '@mui/material/styles';
 import RouterComponent from './Router/RouterComponent';
 import Layout from './components/Layout';
 import {
@@ -11,13 +11,13 @@ import { userSlice } from './features/userSlice';
 const tg = window.Telegram.WebApp
 const tgUser = window.Telegram.WebAppUser
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1976d2',
-    },
-  },
-});
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: '#1976d2',
+//     },
+//   },
+// });
 
 const App = () => {
   const { setUser, setInitDataUnsafe, setTg, setTgUser } = useActions(userSlice.actions);
@@ -29,14 +29,14 @@ const App = () => {
   }, [setTgUser, setUser, setInitDataUnsafe, setTg])
 
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Layout>
-          <RouterComponent />
-          <BottomMenu />
-        </Layout>
-      </Router>
-    </ThemeProvider>
+    // <ThemeProvider theme={theme}>
+    <Router>
+      <Layout>
+        <RouterComponent />
+        <BottomMenu />
+      </Layout>
+    </Router>
+    // </ThemeProvider>
   );
 };
 

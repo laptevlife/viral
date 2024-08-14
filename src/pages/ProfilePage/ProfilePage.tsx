@@ -10,6 +10,7 @@ const ProfilePage = () => {
   return (
     <PageLayout>
       <Profile />
+      <div style={{ height: '100px' }}> </div>
     </PageLayout>
   );
 };
